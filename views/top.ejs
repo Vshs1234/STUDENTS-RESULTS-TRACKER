@@ -1,0 +1,29 @@
+<%- include('./header') -%>
+
+
+<body>
+    
+    <h1 class="glow-head">TOP SCORES</h1>
+
+    <table border="2" cellspacing="5px" cellpadding="10px" class="glow">
+
+        <thead>
+            <th>STUDENT ID</th>
+            <th>NAME</th>
+            <th>DEPARTMENT</th>
+            <th>TOTAL AVERAGE SCORE</th>
+        </thead>
+
+        <% for(var i=0;i<result.length;i++){ %>
+            <tr>
+                <td><h3><%= result[i].stuid %></h3></td>
+                <td><h3><%= result[i].name %></h3></td>
+                <td><h3><%= result[i].dept %></h3></td>
+                <td><h3><%= result[i].avg %></h3></td>
+            </tr>
+        <% }  %>
+
+    </table>
+
+</body>
+<%- include('./footer')  -%>

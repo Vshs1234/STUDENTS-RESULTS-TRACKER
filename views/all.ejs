@@ -1,0 +1,26 @@
+<%- include('header') -%>
+
+<body>
+    
+    <h1 class="glow-head">STUDENTS WHO CLEARED ALL EXAMS</h1>
+    <table border="2" cellspacing="5px" cellpadding="5px" class="glow">
+
+        <thead>
+            <th>STUDENT ID</th>
+            <th>STUDENT NAME</th>
+            <th>DEPARTMENT</th>
+            <th>AVERAGE SCORE</th>
+        </thead>
+
+        <% for(var i=0;i<result.length;i++){ %>
+            <tr>
+                <td><h3><%= result[i].stuid %></h3></td>
+                <td><h3><%= result[i].stuname %></h3></td>
+                <td><h3><%= result[i].dept %></h3></td>
+                <td><h3><%= result[i].a %></h3></td>
+            </tr>
+        <% }  %>
+
+    </table>
+</body>
+<%- include('footer')  -%>

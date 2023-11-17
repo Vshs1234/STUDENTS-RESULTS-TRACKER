@@ -1,0 +1,25 @@
+<%- include('header') -%>
+
+<body>
+    <h1 class="glow-head">FAILED STUDENTS</h1>
+    <table border="2" cellspacing="5px" cellpadding="5px" class="glow" style="margin-left:35%">
+
+        <thead>
+            <th>STUDENT ID</th>
+            <th>NAME</th>
+            <th>DEPARTMENT</th>
+        
+        </thead>
+
+        <% for(var i=0;i<result.length;i++){ %>
+            <tr>
+                <td><h3><%= result[i].stuid %></h3></td>
+                <td><h3><%= result[i].name %></h3></td>
+                <td><h3><%= result[i].dept %></h3></td>
+            </tr>
+        <% }  %>
+
+    </table>
+    
+</body>
+<%- include('footer')  -%>
