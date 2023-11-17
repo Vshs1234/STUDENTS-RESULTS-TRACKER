@@ -135,6 +135,6 @@ app.get('/dev',function(req,res){
     res.redirect('/dev.html');
 })
 
-app.listen(3000,function(){
+app.listen( process.env.PORT || 3000,function(){
     console.log("successfully running on port 3000");
 })
