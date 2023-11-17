@@ -14,7 +14,7 @@ app.use(express.static("public"));
 var con=mysql.createConnection({
     host:"localhost",
     user:"root",
-    password:"Vshs@13092003",
+    password:".........",
     database:"marksdb"
 });
 
